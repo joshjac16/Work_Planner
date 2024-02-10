@@ -21,6 +21,9 @@ $(function () {
       $("#"+id).children(".description").addClass("future")
     }
   }
+  setInterval(function(){
+$("#currentDay").text(dayjs().format("MM-DD-YYYY hh-mm-ss"))
+  },1000)
 
   
   // TODO: Add a listener for click events on the save button. This code should
