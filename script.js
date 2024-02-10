@@ -2,6 +2,17 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
+  $(".saveBtn").on("click",function(){
+    var userEntry = $(this).siblings(".description").val() 
+    var id = $(this).parent().attr("id")
+    localStorage.setItem(id, userEntry)
+  })
+  for(let i = 9; i<18 ; i++){
+    let id = "hour-" + i;
+    let saveEntry = localStorage.getItem(id)
+    $("#"+id).children(".description").val(saveEntry)
+  }
+  
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
