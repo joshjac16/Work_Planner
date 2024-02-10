@@ -7,11 +7,21 @@ $(function () {
     var id = $(this).parent().attr("id")
     localStorage.setItem(id, userEntry)
   })
+  var currentHour= 12//dayjs().hour()
+  console.log(currentHour)
   for(let i = 9; i<18 ; i++){
     let id = "hour-" + i;
     let saveEntry = localStorage.getItem(id)
     $("#"+id).children(".description").val(saveEntry)
+    if(i<currentHour){
+      $("#"+id).children(".description").addClass("past")
+    }else if(i==currentHour){
+      $("#"+id).children(".description").addClass("present")
+    }else{
+      $("#"+id).children(".description").addClass("future")
+    }
   }
+
   
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
