@@ -1,13 +1,13 @@
 # Work_Planner
 a simple calendar application that allows a user to save events for each hour of a typical working day (9am–5pm) by modifying starter code.
 
-###User Story 
+### User Story 
 AS AN employee with a busy schedule
 I WANT to add important events to a daily planner
 SO THAT I can manage my time effectively
 
 
-###Acceptance Criteria
+### Acceptance Criteria
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
 THEN the current day is displayed at the top of the calendar
@@ -23,20 +23,20 @@ WHEN I refresh the page
 THEN the saved events persist
 
 
-##Features
+## Features
 
 Display of current date and time.
 Color-coded time blocks indicating past, present, and future hours.
 Ability to add and save events for each hour of the day.
 Events persist even after refreshing the page.
 
-##Technologies Used
+## Technologies Used
 
 HTML
 CSS
 JavaScript (jQuery)
 
-##Getting Started
+## Getting Started
 
 Clone this repository to your local machine.
 Open the index.html file in your preferred browser.
